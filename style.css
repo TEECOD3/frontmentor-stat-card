@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --main-paraa-color: hsla(0, 0%, 100%, 0.75);
+  --stat-heading-color: hsla(0, 0%, 100%, 0.6);
+  --accent-trans:hsla(275, 39%, 38%, 0.603);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: var(--main-background);
+}
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.card-container{
+  background-color:var(--card-background);
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 78%;
+  max-width: 1140px; 
+  border-radius: 1.0rem;
+  margin: 5%;
+}
+
+.card-text{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  padding: 6%;
+  width: 50%;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 85%;
+}
+.card-text .heading{
+ color:var(--white);
+ font-size: 3.5rem;
+ margin-bottom: 2.8rem;
+ line-height: 4.2rem;
+ letter-spacing: 0.5px;
+
+}
+.card-text .heading span{
+  color: var(--accent);
+}
+
+.card-text p{
+  color: var(--main-paraa-color);
+  line-height:2.5rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+
+.details-list{
+  display: flex;
+  margin-top:4.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.det-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.details-list h1{
+color:var(--white);
+font-weight: bold;
+font-size: 2.3rem;
+}
+.details-list h2{
+  font-size:1.3rem;
+  text-transform:uppercase;
+  color:var(--stat-heading-color);
+  font-weight:bold;
+  letter-spacing: 0.09rem;
+  margin-top: 0.8rem;
+}
+
+
+.card-image{
+  position: relative;
+  background-color: var(--accent);
+  border-top-right-radius:0.8rem;
+  border-bottom-right-radius:0.8rem;
+  width:50%;
+}
+ img{
+   width:100%;
+ height: 100%;
+ mix-blend-mode: multiply;
+}
+
+.mobile-image{
+  display: none;
+}
+
+.pink {
+  background-color: hsl(277, 64%, 61%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.25;
+  border-radius: 0 1rem 1rem 0;
+}
+
+
+
